@@ -109,7 +109,41 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
+
+            //adding row in the first column
+            Positioned(
+              top:380,
+              left: 20,
+              child: Row(children: [
+                Container(
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
+                  color:Colors.pink),
+                  child: const Padding(padding: 
+                  EdgeInsets.all(8.0),
+                  child: Text(
+                    "Task Row Number: 1",
+                    style: TextStyle(color: Colors.white, fontSize: 25),
+                  ),
+                  ),
+                ),
+                const SizedBox(width: 10), // Space between rows
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.blue,
+                    ),
+                child: const Padding(padding: EdgeInsets.all(8.0),
+                  child: Text("Task Row Number: 2",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+                ),
+                  ),
+              ],
+              ),
+
+            ),
           ],
+          
         ),
       ),
     );
